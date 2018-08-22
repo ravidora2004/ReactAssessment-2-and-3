@@ -1,0 +1,118 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	background: #EEEEEE;
+	color: #4d4d4d;
+	min-width: 230px;
+	max-width: 550px;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 300;
+}
+
+:focus {
+	outline: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.todoapp {
+
+	position: relative;
+
+}
+
+.todoapp input::-webkit-input-placeholder {
+
+	font-weight: 100;
+	color: black;
+}
+
+.todoapp input::-moz-placeholder {
+
+	font-weight: 100;
+	color: black;
+}
+
+.todoapp input::input-placeholder {
+
+	font-weight: 100;
+	color: black;
+}
+
+.todoapp h1 {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: left;
+
+  margin: 20px 0 15px 0; 	
+}
+
+
+
+.main {
+	position: relative;
+	z-index: 2;
+	border-top: 1px solid #e6e6e6;
+}
+
+
+.todo-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    background-color: #dbe3eb  ;
+    	color: #fff;
+			border:1px solid #aaa;
+		borderRadius: 5;
+		backgroundColor: #dbe3eb;
+		padding: 5px 5px
+
+}
+
+.todo-list li {
+	position: relative;
+	font-size: 16px;
+	border-bottom: 1px solid #ededed;
+}
+
+.todo-list li :hover {
+  background-color:   #BBDEFB  ;
+}
+
+
+
+.todo-list li.completed label {
+	color: black;
+	text-decoration: line-through;
+}
+
+.todo-list li .destroy {
+
+	font-size: 10px;
+
+
+}
+
+.todo-list li .destroy:hover {
+	color: black;
+}
+
+.todo-list li .destroy:after {
+
+	content: 'Delete';
+}
+
+.todo-list li:hover .destroy {
+	display: block;
+}
